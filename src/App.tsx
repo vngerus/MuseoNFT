@@ -1,5 +1,6 @@
 import React from 'react';
-import { Features, Hero, Navbar } from './components';
+import { Features, Hero, Navbar, Newsletter } from './components';
+
 
 const App: React.FC = () => {
   return (
@@ -7,6 +8,7 @@ const App: React.FC = () => {
       <Navbar />
       <Hero />
       <Features />
+      <Newsletter />
     </div>
   );
 };
