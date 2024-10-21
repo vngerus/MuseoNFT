@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
     return (
-        <section className="bg-white py-16 mt-20">
+        <section className="bg-white h-screen flex items-center">
             <div className="container mx-auto text-center px-4">
                 <div className="text-sm text-gray-500 mb-6 flex justify-center items-center">
                     <span className="mr-2">
@@ -13,8 +13,8 @@ const Hero: React.FC = () => {
                     Museo NFT
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal uppercase text-gray-900 mt-20">
-                    Preservación Cultural y Ecológica de los Pueblos Indígenas
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal uppercase text-gray-900 mb-32">
+                    Preservación Cultural y Ecológica de los Pueblos Indígenas.
                 </h1>
             </div>
         </section>
