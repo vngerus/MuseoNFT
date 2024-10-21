@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-noise {
+    background-image: url('/src/assets/classy-fabric.png'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+}
+
+.bg-gradient-radial {
+    background-image: radial-gradient(circle, transparent, black);
+}
