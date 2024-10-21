@@ -6,12 +6,11 @@ const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const navItems = [
-        { name: 'HOME', id: 'home' },
-        { name: 'STORY', id: 'story' },
-        { name: 'ARTIST', id: 'artist' },
-        { name: 'GALLERY', id: 'gallery' },
-        { name: 'PRESS RELEASE', id: 'press-release' },
-        { name: 'CONTACT', id: 'contact' },
+        { name: 'INICIO', id: 'home' },
+        { name: 'MISION', id: 'mision' },
+        { name: 'GALERIA', id: 'gallery' },
+        { name: 'ÚNETE', id: 'join' },
+        { name: 'CONTACTO', id: 'contact' },
     ];
 
     return (
