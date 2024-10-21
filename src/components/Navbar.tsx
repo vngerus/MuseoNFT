@@ -17,7 +17,6 @@ const Navbar: React.FC = () => {
     return (
         <div className="relative flex items-center justify-between max-w-6xl mx-auto p-4">
             <nav className="flex-grow flex items-center justify-center">
-                {/* Desktop navigation */}
                 <div className="hidden lg:flex lg:items-center lg:space-x-6">
                     {navItems.map((item) => (
                         <button
@@ -42,7 +41,6 @@ const Navbar: React.FC = () => {
                 )}
             </button>
 
-            {/* Popup for mobile navigation */}
             <div
                 className={`fixed inset-0 bg-white z-40 flex items-center justify-center transition-all transform duration-500 ease-in-out ${menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'} `}
             >
@@ -55,7 +53,7 @@ const Navbar: React.FC = () => {
                                         }`}
                                     onClick={() => {
                                         setActive(item.id);
-                                        setMenuOpen(false); // Close menu after selecting an item
+                                        setMenuOpen(false);
                                     }}
                                 >
                                     {item.name}
