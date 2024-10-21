@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .bg-noise {
-    background-image: url('/src/assets/classy-fabric.png'); 
+    background-image: url('/src/assets/terracottaReds.avif'); 
     background-size: cover;
     background-position: center;
-    opacity: 0.2;
+    z-index: 50;;
 }
 
 .bg-gradient-radial {

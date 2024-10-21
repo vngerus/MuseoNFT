@@ -1,5 +1,6 @@
 import React from 'react';
-import { Features, Hero, Navbar, Newsletter } from './components';
+import { Features, Hero, Navbar } from './components';
+import BGradient from './components/shared/BGradient';
 
 
 const App: React.FC = () => {
@@ -8,7 +9,7 @@ const App: React.FC = () => {
       <Navbar />
       <Hero />
       <Features />
-      <Newsletter />
+      <BGradient />
     </div>
   );
 };
