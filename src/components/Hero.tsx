@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
                     <span>Museo NFT</span>
                 </div>
 
-                <h1 id="hero-heading" className="text-4xl md:text-5xl lg:text-6xl font-normal uppercase text-gray-900 mb-32">
+                <h1 id="hero-heading" className="text-4xl md:text-5xl lg:text-6xl font-normal uppercase text-gray-900 mb-32 ">
                     Preservación Cultural y Ecológica de los Pueblos Indígenas.
                 </h1>
             </div>

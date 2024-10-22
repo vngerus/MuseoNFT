@@ -5,7 +5,7 @@ import BGradient from './components/shared/BGradient';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className='font-raleway'>
       <Navbar />
       <Hero />
       <Features />

@@ -62,20 +62,22 @@ const Features: React.FC = () => {
     return (
         <section className="bg-gray-100 min-h-screen flex items-center justify-center" id='features'>
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-normal text-left mb-32 uppercase">Características Clave</h2>
+                <h2 className="text-4xl font-normal mb-32 uppercase text-center">Características Clave</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {items.map((item, index) => (
                         <article key={index} className="flex flex-col items-start mb-8">
                             {index % 2 === 0 ? (
                                 <>
-                                    <img
-                                        ref={(el) => (imageRefs.current[index] = el)}
-                                        data-index={index}
-                                        src={visibleItems.includes(index) ? item.imgSrc : undefined}
-                                        alt={`Imagen de ${item.title}`}
-                                        className="w-full h-40 object-cover rounded-lg mb-4 lg:mb-2 order-3 lg:order-1"
-                                        loading="lazy"
-                                    />
+                                    <div className="relative w-full h-40 overflow-hidden rounded-lg mb-4 lg:mb-2 order-3 lg:order-1">
+                                        <img
+                                            ref={(el) => (imageRefs.current[index] = el)}
+                                            data-index={index}
+                                            src={visibleItems.includes(index) ? item.imgSrc : undefined}
+                                            alt={`Imagen de ${item.title}`}
+                                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 lg:hover:scale-150 rounded-lg"
+                                            loading="lazy"
+                                        />
+                                    </div>
                                     <h3 className="text-xl font-bold uppercase text-left order-1 lg:order-2">{item.title}</h3>
                                     <p className="text-left font-semibold text-gray-600 order-2 lg:order-3">{item.description}</p>
                                 </>
@@ -83,14 +85,16 @@ const Features: React.FC = () => {
                                 <>
                                     <h3 className="text-xl font-bold uppercase text-left order-1 lg:order-1">{item.title}</h3>
                                     <p className="text-left font-semibold text-gray-600 order-2 lg:order-2">{item.description}</p>
-                                    <img
-                                        ref={(el) => (imageRefs.current[index] = el)}
-                                        data-index={index}
-                                        src={visibleItems.includes(index) ? item.imgSrc : undefined}
-                                        alt={`Imagen de ${item.title}`}
-                                        className="w-full h-40 object-cover rounded-lg mt-4 lg:mt-2 order-3 lg:order-3"
-                                        loading="lazy"
-                                    />
+                                    <div className="relative w-full h-40 overflow-hidden rounded-lg mt-4 lg:mt-2 order-3 lg:order-3">
+                                        <img
+                                            ref={(el) => (imageRefs.current[index] = el)}
+                                            data-index={index}
+                                            src={visibleItems.includes(index) ? item.imgSrc : undefined}
+                                            alt={`Imagen de ${item.title}`}
+                                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 lg:hover:scale-150 rounded-lg"
+                                            loading="lazy"
+                                        />
+                                    </div>
                                 </>
                             )}
                         </article>

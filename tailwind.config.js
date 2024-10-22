@@ -21,6 +21,9 @@ export default {
         '90': '90',
         '100': '100',
       },
+      fontFamily: {
+        raleway: ['Raleway', 'sans-serif'], 
+      },
     },
   },
   plugins: [],
