@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bg-noise {
-    background-image: url('/src/assets/terracottaReds.avif'); 
+    background-image: url('/src/assets/background/terracottaReds.avif'); 
     background-size: cover;
     background-position: center;
     z-index: 50;;
@@ -19,5 +19,3 @@
     font-weight: normal;
     font-style: normal;
   }
-
-  
