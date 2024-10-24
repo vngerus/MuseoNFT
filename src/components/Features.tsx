@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { geo, icp, nft, vrar } from '../assets/img';
 
 interface FeatureItem {
     title: string;
@@ -11,22 +12,22 @@ const Features: React.FC = () => {
         {
             title: "NFTs Marketplace",
             description: "Para autenticidad y trazabilidad.",
-            imgSrc: "/src/assets/nft.jpg",
+            imgSrc: nft,
         },
         {
             title: "ICP Blockchain",
             description: "Para registros de identidad.",
-            imgSrc: "/src/assets/icp.webp",
+            imgSrc: icp,
         },
         {
             title: "Realidad Virtual y Aumentada",
             description: "Para experiencias inmersivas.",
-            imgSrc: "/src/assets/vrar.avif",
+            imgSrc: vrar,
         },
         {
             title: "Geolocalización en ICP",
             description: "Para proteger territorios y biodiversidad.",
-            imgSrc: "/src/assets/geo.jpg",
+            imgSrc: geo,
         },
     ];
 
