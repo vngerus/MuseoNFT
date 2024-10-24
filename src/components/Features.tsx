@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { geo, icp, nft, vrar } from '../assets/img';
+import { geo, icp, nft, vrar } from '../assets';
 
 interface FeatureItem {
     title: string;
