@@ -21,10 +21,10 @@ const Hero: React.FC = () => {
                             <path fillRule="evenodd" d="M10 2a6 6 0 00-6 6v4.586L3.707 14.707A1 1 0 003 16h14a1 1 0 00.707-1.707L16 12.586V8a6 6 0 00-6-6zM7 11a1 1 0 112 0 1 1 0 01-2 0zm3 0a1 1 0 112 0 1 1 0 01-2 0zm3 0a1 1 0 112 0 1 1 0 01-2 0z" clipRule="evenodd" />
                         </svg>
                     </span>
-                    <span>Museo NFT</span>
+                    <span className='font-bold uppercase'>Museo NFT</span>
                 </div>
 
-                <h1 id="hero-heading" className="text-4xl md:text-5xl lg:text-6xl font-normal uppercase text-gray-900 mb-8 max-w-full lg:max-w-[50%] mx-auto lg:mx-0">
+                <h1 id="hero-heading" className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-gray-900 mb-8 max-w-full lg:max-w-[50%] mx-auto lg:mx-0">
                     Preservación Cultural y Ecológica de los Pueblos Indígenas.
                 </h1>
             </div>

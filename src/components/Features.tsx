@@ -63,7 +63,15 @@ const Features: React.FC = () => {
     return (
         <section className="bg-gray-100 min-h-screen flex items-center justify-center" id='features'>
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-normal mb-32 uppercase text-center">Características Clave</h2>
+                <h2 className="text-sm text-gray-500 mt-12 mb-12 sm:mt-16 sm:mb-16 flex items-center justify-center lg:justify-start">
+                    <span className="mr-2" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10 2a6 6 0 00-6 6v4.586L3.707 14.707A1 1 0 003 16h14a1 1 0 00.707-1.707L16 12.586V8a6 6 0 00-6-6zM7 11a1 1 0 112 0 1 1 0 01-2 0zm3 0a1 1 0 112 0 1 1 0 01-2 0zm3 0a1 1 0 112 0 1 1 0 01-2 0z" clipRule="evenodd" />
+                        </svg>
+                    </span>
+                    <span className="font-bold uppercase">Características Clave</span>
+                </h2>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {items.map((item, index) => (
                         <article key={index} className="flex flex-col items-start mb-8">
