@@ -1,5 +1,5 @@
 import React from 'react';
-import { Features, Hero, Navbar } from './components';
+import { CTA, Features, Hero, Navbar, ProblemSolution } from './components';
 import BGradient from './components/shared/BGradient';
 
 
@@ -8,6 +8,8 @@ const App: React.FC = () => {
     <div className='font-raleway'>
       <Navbar />
       <Hero />
+      <ProblemSolution />
+      <CTA />
       <Features />
       <BGradient />
     </div>

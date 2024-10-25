@@ -13,6 +13,7 @@ export default {
         terracottaRed: '#C65D3D',  
         deepBlue: '#1E3A5F',      
         pureBlack: '#000000', 
+        forestGreen: '#2C6E49',
       },
       zIndex: {
         '60': '60',

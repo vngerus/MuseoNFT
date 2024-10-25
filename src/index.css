@@ -19,3 +19,19 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @keyframes slide-right {
+    0% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.animate-slide-right {
+    animation: slide-right 3s ease-in-out infinite;
+}

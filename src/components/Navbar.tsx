@@ -9,9 +9,9 @@ const Navbar: React.FC = () => {
 
     const navItems = [
         { name: 'INICIO', id: 'home' },
-        { name: 'MISION', id: 'mision' },
         { name: 'CARACTERÍSTICAS', id: 'features' },
         { name: 'ÚNETE', id: 'newsteller' },
+        { name: 'MISION', id: 'mision' },
         { name: 'CONTACTO', id: 'contact' },
     ];
 
